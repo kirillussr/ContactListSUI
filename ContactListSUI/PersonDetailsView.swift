@@ -12,13 +12,15 @@ struct PersonDetailsView: View {
     let persons: [Person]
     
     var body: some View {
-        List(persons, id: \.self) { person in
-            Section {
-                ContactRowView(text: "\(person.phone)", sistemImage: "phone")
-                ContactRowView(text: "\(person.email)", sistemImage: "tray")
-            } header: {
-                Text("\(person.fullName)")
+        NavigationStack {
+            List(persons) { person in
+                Section(header: Text(person.fullName).font(.headline)) {
+                    Label(person.phone, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
+                }
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
     }
 }

@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Person: Hashable {
-   
+struct Person: Identifiable {
+    
+    let id: Int
     let name: String
     let surname: String
     let phone: String
@@ -39,6 +40,7 @@ extension Person {
         
         for index in 0..<iterationCount {
             let person = Person(
+                id: index + 1,
                 name: names[index],
                 surname: surname[index],
                 phone: phones[index],
@@ -47,14 +49,5 @@ extension Person {
             persons.append(person)
         }
         return persons
-    }
-    
-    static func generateRandomPerson() -> Person {
-        Person(
-            name: DataStore.shared.names.randomElement() ?? "",
-            surname: DataStore.shared.surnames.randomElement() ?? "",
-            phone: DataStore.shared.phones.randomElement() ?? "",
-            email: DataStore.shared.emails.randomElement() ?? ""
-        )
     }
 }

@@ -12,13 +12,19 @@ struct ContactListView: View {
     let persons: [Person]
     
     var body: some View {
-        List(persons, id: \.self) { person in
-            NavigationLink(destination: ContactDetailsView(person: person)) {
-                ContactRowView(text: person.fullName, sistemImage: nil)
+        NavigationStack {
+            List(persons) { person in
+                NavigationLink(
+                    person.fullName,
+                    destination: ContactDetailsView(person: person)
+                )
             }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
     }
 }
+
 
 struct ContactListView_Previews: PreviewProvider {
     static var previews: some View {

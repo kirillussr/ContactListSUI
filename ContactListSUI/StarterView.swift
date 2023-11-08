@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct StarterView: View {
+    
+    private let persons = Person.getContsctList()
+    
     var body: some View {
         
-        let persons = Person.getContsctList()
-        
-        NavigationStack {
-            TabView {
-                ContactListView(persons: persons)
-                    .tabItem {
-                        Image(systemName: "person.2.fill")
-                        Text("Contacts")
-                    }
-                PersonDetailsView(persons: persons)
-                    .tabItem {
-                        Image(systemName: "phone.fill")
-                        Text("Numbers")
-                    }
-            }
-            .navigationTitle("Contact List")
+        TabView {
+            ContactListView(persons: persons)
+                .tabItem {
+                    Image(systemName: "person.2.fill")
+                    Text("Contacts")
+                }
+            
+            PersonDetailsView(persons: persons)
+                .tabItem {
+                    Image(systemName: "phone.fill")
+                    Text("Numbers")
+                }
         }
     }
 }
