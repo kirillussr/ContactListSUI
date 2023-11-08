@@ -16,7 +16,6 @@
 		ED8B7FA42AED6081004EF4A9 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7FA32AED6081004EF4A9 /* ContactListView.swift */; };
 		ED8B7FA62AED60C4004EF4A9 /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7FA52AED60C4004EF4A9 /* ContactDetailsView.swift */; };
 		ED8B7FA82AED60D9004EF4A9 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7FA72AED60D9004EF4A9 /* PersonDetailsView.swift */; };
-		ED8B7FAA2AF0EC11004EF4A9 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B7FA92AF0EC11004EF4A9 /* ContactRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		ED8B7FA32AED6081004EF4A9 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
 		ED8B7FA52AED60C4004EF4A9 /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		ED8B7FA72AED60D9004EF4A9 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
-		ED8B7FA92AF0EC11004EF4A9 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				ED8B7F8F2AED5ECC004EF4A9 /* ContactListSUIApp.swift */,
 				ED8B7F912AED5ECC004EF4A9 /* StarterView.swift */,
 				ED8B7FA32AED6081004EF4A9 /* ContactListView.swift */,
-				ED8B7FA92AF0EC11004EF4A9 /* ContactRowView.swift */,
 				ED8B7FA52AED60C4004EF4A9 /* ContactDetailsView.swift */,
 				ED8B7FA72AED60D9004EF4A9 /* PersonDetailsView.swift */,
 				ED8B7FA12AED6041004EF4A9 /* Models */,
@@ -177,7 +174,6 @@
 				ED8B7FA82AED60D9004EF4A9 /* PersonDetailsView.swift in Sources */,
 				ED8B7F922AED5ECC004EF4A9 /* StarterView.swift in Sources */,
 				ED8B7FA62AED60C4004EF4A9 /* ContactDetailsView.swift in Sources */,
-				ED8B7FAA2AF0EC11004EF4A9 /* ContactRowView.swift in Sources */,
 				ED8B7F902AED5ECC004EF4A9 /* ContactListSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
